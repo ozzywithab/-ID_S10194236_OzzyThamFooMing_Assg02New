@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exchange Rates Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="indexCSS.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <div class = "navBar">
+    <h1 class = "siteName"><a href ="index.html">Exchange Rate Site</a></h2>
+    <nav>
+      <ul>
+        <li><b><a href = "index.html">Home</a></b></li>
+        <li><a href = "https://exchangerate.host/#/#docs">Exchangerate.host</a></li>
+      </ul>
+    </nav>  
+  </div>
+
+  <!-- Content -->
+  <div class = "content">
+
+    <!-- One of the two flexboxes in the bigger container, "content" -->
+    <div class = "contentBoxLeft">
+
+      <!-- This form selects the date from which the user wants to check the currency  -->
+      <form class = "dateSelectorLeft">
+        <label for = "convertDate">Date of exchange rate: </label>
+        <input type = "text" id = "dayLeft" name = "day" placeholder = "DD">
+        <input type = "text" id = "monthLeft" name = "day" placeholder = "MM">
+        <input type = "text" id = "yearLeft" name = "day" placeholder = "YYYY">
+        <input type = "checkbox" name = "latestLeft"  id = "latestLeft" onclick="disableLatest(this.id)">Latest
+      </form>
+
+      <!-- This form retrieves amount and currency user wishes to exchange into another currency -->
+      <div class = "conversionsBoxLeft">
+        <form class = "conversionsInput">
+          <label for = "inputFromLeft">Amount: </label>
+          <input type = "text" id = "inputFromLeft" name = "inputFromLeft">
+          <select id = "currencyFromLeft" name = "currencyFromLeft" class = "selectorLeftFrom">    
+          </select>
+        </form>
+
+        <!-- Just an "=" between both input and output containers -->
+        <div class = "equals"><p>=</p></div>
+        
+        <!-- This form outputs amount and currency user wants to change original currency to -->
+        <form class = "conversionsOutput">
+          <label for = "outputToLeft">Amount: </label>
+          <input type = "text" id = "outputToLeft" name = "outputToLeft">
+          <select name = "currencyToLeft" id="currencyToLeft" class = "selectorLeftTo">
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <!-- One of the two flexboxes in the bigger container, "content" -->
+    <div class = "contentBoxRight">
+      <!-- This form selects the date from which the user wants to check the currency  -->
+      <form class = "dateSelectorRight">
+        <label for = "convertDate">Date of exchange rate: </label>
+        <input type = "text" id = "dayRight" name = "day" placeholder = "DD">
+        <input type = "text" id = "monthRight" name = "day" placeholder = "MM">
+        <input type = "text" id = "yearRight" name = "day" placeholder = "YYYY">
+        <input type = "checkbox" name = "latestRight" id = "latestRight" onclick="disableLatest(this.id)">Latest
+      </form>
+
+
+      <div class = "conversionsBoxRight">
+
+        <!-- This form retrieves amount and currency user wishes to exchange into another currency -->
+        <form class = "conversionsInput">
+          <label for = "inputFromRight">Amount: </label>
+          <input type = "text" id = "inputFromRight" name = "inputFromRight">
+          <select id = "currencyFromRight" name = "currencyFromRight" class = "selectorRightFrom">
+          </select>
+        </form>
+
+        <!-- Just an "=" between both input and output containers -->
+        <div class = "equals"><p>=</p></div>
+
+        <!-- This form outputs amount and currency user wants to change original currency to -->
+        <form class = "conversionsOutput">
+          <label for = "outputToRight">Amount: </label>
+          <input type = "text" id = "outputToRight" name = "outputToRight" class = "selectorRight">
+          <select name = "currencyToRight" id="currencyToRight">
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

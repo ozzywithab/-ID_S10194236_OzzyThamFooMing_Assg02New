@@ -1,0 +1,173 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap');
+
+/* Sets default margins of all elements to 0% so it's flush with browser edges */
+*{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(images/background.png);
+    background-size: cover;
+}
+
+/* CSS for navigation bar/header */
+.navBar{
+    width: 100%;    
+    height: 60px;
+    background-color: #1D3557;
+    display: flex;
+    align-items: center;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    box-sizing: border-box;
+}
+
+/* CSS fo "Exchange Rate Site" on the left of navigation bar, since it's clickable */
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* CSS for nav tag within navBar class, aligns items in nav tag to right and sets flex to 1 */
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+/* CSS for nav tag elements to position where I want them to be/no list styles */
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 35px;
+}
+
+/* CSS for a tags to affect actual text of list item  */
+nav ul li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS for content class that groups all of the site's content and displays as a flex */
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+/* CSS for flexboxes under content class */
+.contentBoxLeft, .contentBoxRight{
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #F1FAEE   ;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: #457B9D;
+    border-style: solid;
+    border-width: 4px;
+    box-sizing: border-box;
+}
+
+/* CSS for the the conversion forms that is under the date form */
+.conversionsBoxLeft, .conversionsBoxRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 35px;
+    box-sizing: border-box;
+}
+
+/* CSS for the equals that appears between both conversion boxes */
+.equals p{
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+}
+
+/* CSS for the two containers that hold content */
+.contentBoxLeft label, .contentBoxRight label{  
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Setting heigh and width of input types that appear in both content containers */
+.contentBoxLeft input[type = "checkbox"], .contentBoxRight input[type = "checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+
+/* Various CSS for all inputs for that appear in both content containers */
+.contentBoxLeft input, .contentBoxRight input{
+    height: 45px;
+    width: 200px;
+    padding-left: 5px;
+    font-size: 20px;
+    border: #0B525B;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Setting font size for form labels */
+.dateSelectorLeft label, .dateSelectorRight label{
+    font-size: 17px;
+}
+
+/* CSS for inputs in date selector */
+.dateSelectorLeft input, .dateSelectorRight input{
+    height: 30px;
+    width: 125px;
+    padding-left: 5px;
+    font-size: 20px;
+    border: #0B525B;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CSS for labels for forms in the conversions boxes */
+.conversionsBoxLeft label, .conversionsBoxRight label{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* CSS for inputs in the conversions boxes */
+.conversionsBoxLeft input, .conversionsBoxRight input{
+    border-radius: 4px;
+    height: 45px;
+    width: 200px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+/* CSS for select form tag in convsersions boxes */
+.conversionsBoxLeft select, .conversionsBoxRight select{
+    border-radius: 4px;
+    height: 45px;
+    width: 90px;
+    padding-left: 5px;
+    font-size: 20px;
+    border: #0B525B;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
