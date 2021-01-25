@@ -1,6 +1,8 @@
 # ID_S10194236_OzzyThamFooMing_Assg02 : Exchange rates website
 Website was made with the purpose of providing user with the exchange rates of various currencies including some cryptocurrencies. It was made with the exchangerate.host api (https://exchangerate.host/#/#docs)
 
+Live site: https://ozzywithab.github.io/-ID_S10194236_OzzyThamFooMing_Assg02New/
+
 ### Design process
 
 An exchange rate function should return the exchange rates that the user is looking for and provide the user with some history to a certain's currency's performance and a live update on it's value. However, due to API limitations (when using for free, without subscribing), the site is not able to show graphs of it's previous performance (limited requests) and live updates on currency value (updated hourly instead of real-time). To tackle this, the site provides its users with 2 currency converters with the ability to view the exchange rates from different dates so they are able to compare a currency's performance, then and now.
