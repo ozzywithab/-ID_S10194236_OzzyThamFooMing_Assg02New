@@ -1,5 +1,5 @@
 // Fetching currencies and adding them into select tag form
-fetch("https://api.exchangerate.host/latest")
+fetch("http://api.exchangerate.host/latest")
 .then(Response => Response.json())
 .then(data =>{
     currencies = data
