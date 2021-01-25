@@ -1,6 +1,8 @@
 # ID_S10194236_OzzyThamFooMing_Assg02 : Exchange rates website
 Website was made with the purpose of providing user with the exchange rates of various currencies including some cryptocurrencies. It was made with the exchangerate.host api (https://exchangerate.host/#/#docs)
 
+###### View site in 1920x1080 or zoom out until there are only two rows of input on either side of the site
+
 Live site: https://ozzywithab.github.io/-ID_S10194236_OzzyThamFooMing_Assg02New/
 
 ### Design process
